@@ -7,6 +7,7 @@ contributors:
   - byzyk
   - sokra
   - EugeneHlushko
+  - wizardofhogwarts
 ---
 
 As mentioned in [Getting Started](/guides/getting-started/#using-a-configuration), there are multiple ways to define the `entry` property in your webpack configuration. We will show you the ways you __can__ configure the `entry` property, in addition to explaining why it may be useful to you.
@@ -67,7 +68,7 @@ Below is a list of entry configurations and their real-world use cases:
 
 ### Separate App and Vendor Entries
 
-T> In webpack version < 4 it was common to add vendors as separate entrypoint to compile it as separate file (in combination with the `CommonsChunkPlugin`). This is discouraged in webpack 4. Instead the `optimization.splitChunks` option takes care of separating vendors and app modules and creating a separate file. __Do not__ create an entry for vendors or other stuff which is not the starting point of execution.
+T> In webpack version < 4 it was common to add vendors as a separate entrypoint to compile it as a separate file (in combination with the `CommonsChunkPlugin`). This is discouraged in webpack 4. Instead the `optimization.splitChunks` option takes care of separating vendors and app modules and creating a separate file. __Do not__ create an entry for vendors or other stuff which is not the starting point of execution.
 
 ### Multi Page Application
 
